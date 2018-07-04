@@ -1,0 +1,10 @@
+classes:
+- cluster.$ENV_NAME.infra.config
+parameters:
+ _param:
+ linux_system_codename: xenial
+ reclass_data_revision: master
+ linux:
+ system:
+ name: $SALT_MASTER_NAME
+ domain: $ENV_DOMAIN
